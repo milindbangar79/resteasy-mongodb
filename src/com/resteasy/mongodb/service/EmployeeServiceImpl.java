@@ -45,8 +45,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 		Address add = new Address();
 		add.setNumber("9");
-		add.setPostcode("EH12 9DU");
-		add.setStreet("Craw Yard Drive");
+		add.setPostcode("EX12 8DU");
+		add.setStreet("Craw Drive");
 		add.setTown("Preston");
 		emp.setAddress(add);
 
