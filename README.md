@@ -1,37 +1,36 @@
 ## Resteasy MongoDB Project
 
-You can use the [editor on GitHub](https://github.com/milindbangar79/resteasy-mongodb/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This repository provides a simple example for the following involving RestEasy framework:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. To connect to MongoDB using Dependency Injection
+2. Create Swagger Spec using [swagger.io](https://github.com/swagger-api/swagger-core/wiki/Swagger-Core-RESTEasy-2.X-Project-Setup-1.5)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### POM Configuration
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+```
+Dependencies Required for Dependency Injection :
 
-- Bulleted
-- List
+<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-cdi</artifactId>
+			<version>3.6.2.Final</version>
+</dependency>
 
-1. Numbered
-2. List
+Swagger IO Dependency:
+<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-jaxrs</artifactId>
+			<version>1.5.0</version>
+</dependency>
 
-**Bold** and _Italic_ and `Code` text
+MongoDB Dependency:
+<dependency>
+			<groupId>com.google.code.morphia</groupId>
+			<artifactId>morphia</artifactId>
+			<version>0.104</version>
+</dependency>
 
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/milindbangar79/resteasy-mongodb/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
