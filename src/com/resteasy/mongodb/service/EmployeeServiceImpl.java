@@ -34,7 +34,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	@GET
-	@Path("/getAll")
+	@Path("/employees")
 	@ApiOperation(value = "Get All employees from the database", notes = "Get All the Employees Currently In The Database", response = Employee.class)
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "All employees returned"),
 			@ApiResponse(code = 404, message = "Employees not available"),@ApiResponse( code = 403 , message = "Operation Not allowed") })

@@ -16,30 +16,13 @@ public class DBConnector {
 		
 		public DBConnector(){
 			
-			/*for (DbEnvironmentVariables dbEnv : DbEnvironmentVariables.values()){
-				try {
-					ValidateEnvironmentVariables.isEnvironmentVariableValid(dbEnv.getEnvVariable());
-				} catch (MissingEnvironmentVariableCheckedException e) {
-					throw new MissingEnvironmentVariableCheckedException("", e);
-				}
-			}*/
-			
-			
-			System.out.println("MongoDB Port ::::" + System.getenv("MONGODB_DB_HOST"));
-			System.out.println("MongoDb Port::::" + System.getenv("MONGODB_DB_PORT"));
-			System.out.println("MongoDB APP Name :::" + System.getenv("APP_NAME"));
-			
+			//TODO : Remove hardcoded values post implementing approach for properties file
 			String host = "localhost";
 			String port = "27017";
 			String username = "";
 			String password = "";
 			String db = "test";
 			
-			//String host = System.getenv("MONGODB_DB_HOST");
-			//String port = System.getenv("MONGODB_DB_PORT");
-			//String username = "";
-			//String password = "";
-			//String db = System.getenv("APP_NAME");
 			
 			try {			
 				if (host==null) {
