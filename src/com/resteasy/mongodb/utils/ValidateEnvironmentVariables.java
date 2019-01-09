@@ -5,7 +5,7 @@ import java.util.Map;
 public class ValidateEnvironmentVariables {
 
 	public static boolean isEnvironmentVariableValid(String envVariable)
-			throws MissingEnvironmentVariableCheckedException {
+			throws ServiceException {
 
 		boolean isValid = false;
 
@@ -22,7 +22,7 @@ public class ValidateEnvironmentVariables {
 
 			}
 		} catch (Exception err) {
-			throw new MissingEnvironmentVariableCheckedException(
+			throw new ServiceException(
 					"Environment Variable " + envVariable + " does not exist", err);
 
 		}

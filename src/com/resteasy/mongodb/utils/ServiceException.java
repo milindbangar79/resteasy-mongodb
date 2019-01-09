@@ -1,27 +1,27 @@
 package com.resteasy.mongodb.utils;
 
-public class MissingEnvironmentVariableCheckedException extends Exception {
+public class ServiceException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 
-	public MissingEnvironmentVariableCheckedException() {
+	public ServiceException() {
 		super();
 	}
 
-	public MissingEnvironmentVariableCheckedException(String errMessage, Throwable cause) {
+	public ServiceException(String errMessage, Throwable cause) {
 		super(errMessage, cause);
 	}
 
-	public MissingEnvironmentVariableCheckedException(String message, Throwable cause, boolean enableSuppression,
+	public ServiceException(String message, Throwable cause, boolean enableSuppression,
 			boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
 	}
 
-	public MissingEnvironmentVariableCheckedException(String message) {
+	public ServiceException(String message) {
 		super(message);
 	}
 
-	public MissingEnvironmentVariableCheckedException(Throwable cause) {
+	public ServiceException(Throwable cause) {
 		super(cause);
 	}
 
