@@ -121,7 +121,11 @@
 			<version>1.2</version>
 			<scope>provided</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>io.xlate</groupId>
+			<artifactId>property-inject</artifactId>
+			<version>1.0.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -143,7 +147,6 @@
 				<configuration>
 					<warSourceDirectory>WebContent</warSourceDirectory>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<!--<packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes> -->
 				</configuration>
 			</plugin>
 			<plugin>
